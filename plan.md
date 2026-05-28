@@ -2,34 +2,39 @@
 
 Diseño aprobado en [docs/superpowers/specs/2026-05-28-taller-agentic-ai-chevening-design.md](docs/superpowers/specs/2026-05-28-taller-agentic-ai-chevening-design.md).
 
-## Fases
+## Iteración 1 (completada)
+Repo con dos tracks: `project_template/` para newbies, `advanced/` para los que quieren ir más allá.
 
-### Fase 1 — Guías de setup
-- [ ] `setup/setup-gemini-cli-mac.md` (es)
-- [ ] `setup/setup-gemini-cli-windows.md` (es)
-- [ ] `setup/setup-vscode.md` (es, con awareness de Python/R)
+## Iteración 2 (en curso) — Skills y MCP migran a slides
 
-### Fase 2 — Track newbie (`project_template/`)
-- [ ] `project_template/GEMINI.md` (en, skeleton con defaults)
-- [ ] `project_template/README.md` (es, 3 pasos)
-- [ ] `project_template/docs/ejemplo-fuente.md` (brief sintético, ~250 palabras)
-- [ ] `project_template/output/.gitkeep`
+**Motivación:** que durante la charla todos escuchen que skills y MCP existen y son el siguiente paso natural. Tener una carpeta `advanced/` aparte termina siendo material que pocos abrirán; los slides garantizan exposición.
 
-### Fase 3 — Track avanzado (`advanced/`)
-- [ ] `advanced/README.md` (es, intro al track)
-- [ ] `advanced/skills.md` (es, concepto + cuándo + anatomía)
-- [ ] `advanced/mcp.md` (es, concepto + ejemplo de setup)
-- [ ] `advanced/ejemplo-skill/SKILL.md` (en, memo-reviewer)
+### Cambios
 
-### Fase 4 — Slides
-- [ ] `slides/charla.md` (es, Marp, ~12-14 slides con Mermaid)
+- [ ] Actualizar spec (`docs/superpowers/specs/...`) para reflejar la nueva estructura.
+- [ ] Editar `slides/charla.md`: reemplazar la slide única "mirá advanced/" por 4 slides dedicadas (2 skills + 2 MCP). Mantener tono "awareness, no deep dive".
+- [ ] Editar `README.md` raíz: sacar fila `advanced/` del mapa del repo, sacar sección "para los que se enganchen".
+- [ ] Borrar carpeta `advanced/` completa (4 archivos: README.md, skills.md, mcp.md, ejemplo-skill/SKILL.md).
+- [ ] Re-renderizar `slides/charla.html` con Marp.
+- [ ] Commit.
 
-### Fase 5 — README raíz
-- [ ] `README.md` (es, reemplaza el README inicial)
+### Estructura final
 
-### Fase 6 — Commit final
-- [ ] Verificar estructura completa con `find`
-- [ ] Git add + commit con mensaje descriptivo (no push — eso lo decide el usuario)
+```
+taller-agenticAI-chevening/
+├── README.md
+├── setup/
+│   ├── setup-gemini-cli-mac.md
+│   ├── setup-gemini-cli-windows.md
+│   └── setup-vscode.md
+├── project_template/
+│   ├── GEMINI.md
+│   ├── README.md
+│   ├── docs/ejemplo-fuente.md
+│   └── output/.gitkeep
+└── slides/
+    ├── charla.md
+    └── charla.html (generado)
+```
 
-## Orden de ejecución
-Fase 1 → 2 → 3 → 4 → 5 → 6. Sin dependencias bloqueantes entre fases; el orden es solo para que el repo crezca de afuera hacia adentro (lo que ven primero los usuarios → lo más específico → presentación → entrada).
+Más simple. Una sola fuente de verdad para los temas avanzados: las slides.

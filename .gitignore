@@ -12,3 +12,7 @@ Thumbs.db
 # Editor
 .vscode/
 *.swp
+
+# Slides renderizados (regenerar con: npx @marp-team/marp-cli slides/charla.md --html -o slides/charla.html)
+slides/*.html
+slides/*.pdf

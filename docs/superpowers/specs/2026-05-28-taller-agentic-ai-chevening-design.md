@@ -38,22 +38,18 @@ taller-agenticAI-chevening/
 │   ├── setup-gemini-cli-mac.md        # (es)
 │   ├── setup-gemini-cli-windows.md    # (es)
 │   └── setup-vscode.md                # (es) con awareness de Python/R
-├── project_template/                  # Track newbie — kit base
+├── project_template/                  # Kit base para el ejercicio de cierre
 │   ├── GEMINI.md                      # (en) context skeleton
 │   ├── README.md                      # (es) 3 pasos para arrancar
 │   ├── docs/
 │   │   └── ejemplo-fuente.md          # Fuente sample para tener algo concreto
 │   └── output/.gitkeep
-├── advanced/                          # Track avanzado — para los que ya pillan
-│   ├── README.md                      # (es)
-│   ├── skills.md                      # (es) qué son, cuándo, ejemplo
-│   ├── mcp.md                         # (es) qué es MCP, cómo agregar server
-│   └── ejemplo-skill/
-│       └── SKILL.md                   # (en) skill chica de referencia
 └── slides/
-    ├── charla.md                      # (es) Marp deck
+    ├── charla.md                      # (es) Marp deck (incluye skills + MCP)
     └── images/                        # Diagramas/imágenes propias
 ```
+
+**Cambio respecto a la primera iteración:** los temas avanzados (skills + MCP) se cubren dentro de los slides, no en una carpeta separada `advanced/`. Razón: garantizar que todos los escuchen durante la charla, no depender de que abran material extra.
 
 ## Componentes — diseño detallado
 
@@ -67,7 +63,7 @@ Operativo. Estructura: título → qué hacemos → setup pre-taller (links a 3 
 - **Windows:** Node installer (nodejs.org) → npm install Gemini CLI → login Google → verify. PowerShell en vez de zsh.
 - **VSCode:** Install + abrir carpeta + extensiones recomendadas (Markdown All in One, Python, R) + terminal integrada + tip sobre Copilot. Python/R como awareness (no requeridos para el taller).
 
-### `project_template/` (track newbie)
+### `project_template/`
 
 `GEMINI.md` skeleton con defaults sensatos:
 - Plan first / wait for OK before editing.
@@ -80,17 +76,11 @@ Operativo. Estructura: título → qué hacemos → setup pre-taller (links a 3 
 
 `docs/ejemplo-fuente.md`: brief sintético, ~250 palabras, sobre un tema universal (digital divide / acceso a internet rural). Da algo concreto para hablar con el agente al primer prompt.
 
-### `advanced/` (track avanzado)
+### `slides/charla.md` (Marp, ~16-18 slides)
 
-Material para "después del taller, si te enganchaste":
+Bloques: apertura (1-2) → qué es agentic AI (3-4) → contexto es todo (3) → modos de falla (2) → demo bridge (1) → skills + MCP como awareness (4) → manos a la obra + cierre (2-3).
 
-- `skills.md`: qué es una skill (archivo `SKILL.md` que el agente carga cuando aplica), cuándo conviene, anatomía. Punteros a doc oficial.
-- `mcp.md`: qué es Model Context Protocol, qué problema resuelve, cómo agregar un server en Gemini CLI.
-- `ejemplo-skill/SKILL.md`: skill chica concreta — "memo-reviewer" o equivalente — para inspirar.
-
-### `slides/charla.md` (Marp, ~12-14 slides)
-
-Bloques: apertura (1-2) → qué es agentic AI (3-4) → contexto es todo (3) → modos de falla (2) → demo bridge (1) → cierre + advanced (2-3).
+Los temas avanzados (skills, MCP) van en slides dedicados con tono "esto existe, esto es lo siguiente". Sin deep dive — link a docs oficiales para los que quieran ir más profundo.
 
 Diagramas propios en Mermaid. Cero imágenes scrapeadas de De Kadt. Crédito explícito en slide de cierre.
 

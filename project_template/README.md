@@ -53,7 +53,7 @@ Ahí va lo que el agente escribe. `GEMINI.md` ya le dice que ese es el lugar —
 
 ## ¿Cómo sigo después?
 
-Si esta forma de trabajar te gustó, mirá `advanced/` en el repo principal. Hay material sobre **skills** (recetas reusables que el agente puede invocar) y **MCP** (conectar al agente con herramientas externas como filesystem, GitHub, etc).
+Si esta forma de trabajar te gustó, los siguientes pasos naturales son **skills** (recetas reusables que el agente invoca cuando aplican) y **MCP** (conectar al agente con herramientas externas como filesystem, GitHub, búsqueda web). Los vimos por arriba en las slides del taller — empezá por la doc oficial de tu herramienta cuando estés listo para meterte.
 
 ## Si algo no funciona
 

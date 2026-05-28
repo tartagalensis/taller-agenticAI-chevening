@@ -31,17 +31,7 @@ Vas a usar [`project_template/`](./project_template/) como punto de arranque par
 | [`setup/`](./setup/) | Guías de instalación (Gemini CLI + VSCode) |
 | [`slides/`](./slides/) | Slides de la charla (formato Marp) |
 | [`project_template/`](./project_template/) | Kit base para tu primer proyecto |
-| [`advanced/`](./advanced/) | Material extra: **skills** y **MCP** |
 | [`plan.md`](./plan.md) · [`docs/superpowers/specs/`](./docs/superpowers/specs/) | Cómo se diseñó este repo (meta) |
-
-## Para los que se enganchen
-
-El track [`advanced/`](./advanced/) tiene material sobre:
-
-- **Skills** — empaquetar recetas reusables que el agente invoca cuando aplican.
-- **MCP** — conectar al agente con herramientas externas (filesystem, GitHub, web search, etc.).
-
-No esperamos cubrir esto en vivo. Está ahí para cuando se les antoje seguir.
 
 ## Créditos
 

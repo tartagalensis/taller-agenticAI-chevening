@@ -244,14 +244,101 @@ No hace falta terminar nada hoy. **Solo arrancar.**
 
 ---
 
-## Si te enganchaste, mirá `advanced/`
+## ¿Qué viene después?
 
-- **Skills** — recetas reusables que el agente invoca cuando aplican. Útil cuando hacés la misma cosa muchas veces.
-- **MCP** — conectar al agente con herramientas externas (filesystem, web search, GitHub). Útil cuando necesitás info de afuera del proyecto.
+Dos cosas para tener en el radar — no las van a usar hoy, pero saber que existen les abre el siguiente nivel:
+
+- **Skills** → recetas reusables que el agente invoca cuando aplican.
+- **MCP** → conectar al agente con herramientas externas (filesystem, web, GitHub, Slack...).
 
 <br>
 
-Cero apuro. Cuando lo necesiten, está ahí.
+Las próximas slides son un sobrevuelo. Cero apuro por dominar esto hoy.
+
+---
+
+<!-- _class: lead -->
+
+# Skills
+
+### Recetas reusables que el agente invoca solo
+
+---
+
+## ¿Qué es una skill?
+
+Un archivo (`SKILL.md`) con instrucciones claras de **qué hace**, **cuándo usarla**, y **cómo proceder**. Vive en una carpeta de tu proyecto (o globalmente) y el agente la lee cuando aplica.
+
+```markdown
+---
+name: memo-reviewer
+description: Use when the user has a draft policy memo and wants
+  structured feedback before sending it.
+---
+
+# Memo reviewer
+
+## When to use
+- Draft of memo, briefing, op-ed
+- User asks for "feedback" or "critique"
+
+## How to proceed
+1. Read the draft fully.
+2. Score 6 categories (clarity, evidence, structure...).
+3. Save critique to `output/<filename>-critique.md`.
+```
+
+---
+
+## ¿Cuándo conviene crear una?
+
+Cuando hacés la **misma tarea con el mismo método más de 3 veces**: revisar memos, estructurar notas, comparar drafts, generar minutas.
+
+**Sin skill** → cada vez le repetís en el prompt cómo querés que lo haga.
+**Con skill** → el cómo está versionado en archivo, el agente decide solo cuándo aplicarla.
+
+<br>
+
+Documentación oficial:
+- Claude Code: [docs.claude.com/en/docs/claude-code/skills](https://docs.claude.com/en/docs/claude-code/skills)
+- Ejemplos: [De Kadt's project_demo/.claude/skills/](https://github.com/ddekadt/MY580_agentic_ai/tree/main/project_demo/.claude/skills)
+
+---
+
+<!-- _class: lead -->
+
+# MCP
+### Model Context Protocol
+
+### El agente sale de tu carpeta hacia el mundo
+
+---
+
+## ¿Qué problema resuelve?
+
+Tu agente, por defecto, **solo ve tu proyecto**. MCP es un protocolo abierto que estandariza cómo conectarlo con cosas de afuera: tu filesystem completo, búsqueda web, GitHub, Slack, bases de datos, calendarios.
+
+```mermaid
+flowchart LR
+  A[Agente] <--> M[MCP server]
+  M <--> R[Recurso externo:<br/>web, GitHub, Slack, DB...]
+```
+
+**La clave:** un mismo server MCP sirve para cualquier cliente compatible (Gemini CLI, Claude Code, Cursor...). Es como USB para agentes.
+
+---
+
+## ¿Cuándo conviene?
+
+- Necesitás **info actualizada** que el agente no tiene → server de web search.
+- Querés que **lea papers de otra carpeta** sin moverlos → server de filesystem con scope explícito.
+- Trabajás en equipo y querés que **lea issues de GitHub o mensajes de Slack** → servers específicos.
+
+<br>
+
+⚠️ **Cuidado con la seguridad.** Cada server suma superficie de acceso. Empezá con scope chico, evaluá qué le estás dando.
+
+Lista completa: [github.com/modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
 
 ---
 
