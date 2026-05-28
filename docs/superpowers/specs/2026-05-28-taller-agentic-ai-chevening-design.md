@@ -6,7 +6,7 @@
 
 ## Contexto
 
-Workshop corto (30-45 min) para becarios Chevening 2025-26 sobre cómo usar herramientas de agentic AI en trabajo de investigación, policy, y profesional. Audiencia mayoritariamente no-técnica (políticas públicas, derecho, relaciones internacionales). Algunos participantes con más fluidez técnica.
+Workshop de 2 horas para becarios Chevening 2025-26 sobre cómo usar herramientas de agentic AI en trabajo de investigación, policy, y profesional. Audiencia mayoritariamente no-técnica (políticas públicas, derecho, relaciones internacionales). Algunos participantes con más fluidez técnica.
 
 ## Decisiones clave
 
@@ -24,10 +24,10 @@ Workshop corto (30-45 min) para becarios Chevening 2025-26 sobre cómo usar herr
 ## Flujo del taller
 
 1. **Pre-taller (asincrónico):** Asistentes hacen setup en sus laptops con guías del repo.
-2. **Vivo (30-45 min):**
-   - Charla intro + Q&A (~20')
+2. **Vivo (~2 horas):**
+   - Charla intro + Q&A (~35')
    - Demo en vivo sobre proyecto real de un asistente (~10')
-   - Cierre: arrancan su propio proyecto desde `project_template/` (~10')
+   - Hands-on: arrancan su propio proyecto desde `project_template/`, con apoyo en sala (~75')
 
 ## Estructura del repo
 

@@ -1,12 +1,12 @@
 # Taller de Agentic AI — Chevening 2025-26
 
-Workshop corto (30-45 min) sobre cómo usar herramientas de **agentic AI** en investigación, trabajo de policy, y tareas profesionales reales.
+Workshop de **2 horas** sobre cómo usar herramientas de **agentic AI** en investigación, trabajo de policy, y tareas profesionales reales.
 
 ## Qué vamos a hacer
 
-1. **Charla intro** — qué es agentic AI, qué cuidados tener (~15-20 min).
+1. **Charla intro + Q&A** — qué es agentic AI, qué cuidados tener (~35 min).
 2. **Demo en vivo** — el agente trabajando sobre un proyecto real de alguien en la sala (~10 min).
-3. **Manos a la obra** — cada uno arranca su propio proyecto desde el template (~10 min).
+3. **Hands-on** — cada uno arranca su propio proyecto desde el template, con apoyo en sala (~75 min).
 
 ## ⚠️ Antes del taller — hacé el setup (~15 min)
 

@@ -44,11 +44,11 @@ El objetivo de hoy: **que se vayan capaces de empezar**, no enseñarles la recet
 
 ---
 
-## Agenda (30-45 min)
+## Agenda (2 horas)
 
-1. **Charla intro** — qué es agentic AI, qué cuidados tener (15-20 min).
-2. **Demo en vivo** — sobre un proyecto real de alguien acá (10 min).
-3. **Manos a la obra** — cada uno arranca su template (10 min).
+1. **Charla intro + Q&A** — qué es agentic AI, qué cuidados tener (~35 min).
+2. **Demo en vivo** — sobre un proyecto real de alguien acá (~10 min).
+3. **Hands-on** — cada uno arranca su template, con apoyo en sala (~75 min).
 
 <br>
 
@@ -235,7 +235,7 @@ Usalo para **acelerarte** en las partes mecánicas. Mantené tu cerebro encendid
 
 ---
 
-## Lo que vas a hacer ahora (10 min)
+## Lo que vas a hacer ahora (~75 min con apoyo)
 
 1. Abrí `project_template/` en VSCode.
 2. Copialo y renombralo con tu proyecto:
