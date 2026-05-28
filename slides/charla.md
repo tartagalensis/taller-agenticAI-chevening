@@ -3,6 +3,7 @@ marp: true
 theme: default
 paginate: true
 backgroundColor: #fff
+html: true
 style: |
   section { font-size: 26px; }
   h1 { font-size: 48px; }
@@ -10,7 +11,14 @@ style: |
   code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
   .small { font-size: 20px; color: #666; }
   .center { text-align: center; }
+  .mermaid { background: transparent; text-align: center; }
+  .mermaid svg { max-width: 100%; max-height: 380px; }
 ---
+
+<script src="./mermaid.min.js"></script>
+<script>
+  mermaid.initialize({ startOnLoad: true, theme: 'default', securityLevel: 'loose' });
+</script>
 
 <!-- _class: lead -->
 
@@ -44,7 +52,7 @@ El objetivo de hoy: **que se vayan capaces de empezar**, no enseñarles la recet
 
 <br>
 
-Materiales: <span class="small">github.com/[tu-usuario]/taller-agenticAI-chevening</span>
+Materiales: <span class="small">github.com/tartagalensis/taller-agenticAI-chevening</span>
 
 ---
 
