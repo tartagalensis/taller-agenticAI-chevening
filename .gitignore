@@ -1,0 +1,14 @@
+# Local Claude Code settings (no commitear)
+.claude/settings.local.json
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Output del agente — cada uno tiene el suyo, no es contenido del repo
+**/output/*
+!**/output/.gitkeep
+
+# Editor
+.vscode/
+*.swp
