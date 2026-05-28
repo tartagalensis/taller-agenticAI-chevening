@@ -106,19 +106,22 @@ flowchart LR
 
 ---
 
-## ¿Por qué les importa a Chevening?
+## ¿Por qué les importaría a ustedes?
 
-Casos donde el patrón "agente con archivos" rinde:
+**Donde los agentes brillan:**
 
-- Sintetizar varios papers / briefings.
-- Drafts iniciales de policy memos, op-eds, propuestas.
-- Ordenar y estructurar notas de campo, entrevistas, lectura.
-- Comparar documentos largos (acuerdos, leyes, contratos).
-- Cualquier tarea repetitiva con texto.
+- **Análisis de datos** — leer un CSV, escribir el script, correrlo, devolver resultados con gráficos. Sin saber Python ni R.
+- **Programar sin saber programar** — el agente itera contra el compilador, vos describís qué querés. Funciona porque hay un *feedback loop real*.
+- **Proyectos end-to-end** — el agente trabaja en tus archivos, mantiene contexto entre pasos, ejecuta comandos. Sin copy-paste de un chat.
+
+**También se usan para — con asterisco:**
+
+- Resumir, agrupar, comparar documentos.
+- ⚠️ Los LLMs **no son tan buenos en esto** como parece. Alucinan, dicen lo que querés oír, omiten matices. Verificá siempre.
 
 <br>
 
-**No** es para reemplazarles el pensamiento. Es para acelerarles las primeras 2-3 iteraciones.
+**No** es para reemplazarles el pensamiento. Es para acelerar las primeras 2-3 iteraciones.
 
 ---
 
